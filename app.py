@@ -15,7 +15,7 @@ def index():
 # 貨物数取得(ETD)
 @app.route('/v1/shipments-etd/<string:type>', methods=['GET'])
 def get_number_of_shipments_etd(type):
-    json_open = open('fwd_api_sample_number_of_shipments.json', 'r')
+    json_open = open('sample_data/fwd_api_sample_number_of_shipments.json', 'r')
     json_obj = json.load(json_open)
     if type == 'region':
         response = jsonify(json_obj['region_daily'])
@@ -28,7 +28,7 @@ def get_number_of_shipments_etd(type):
 # 異常貨物取得
 @app.route('/v1/exceptions/<string:hawb>', methods=['GET'])
 def get_exceptions(hawb):
-    json_open = open('fwd_api_sample_exception.json', 'r')
+    json_open = open('sample_data/fwd_api_sample_exception.json', 'r')
     json_obj = json.load(json_open)
     for i in range(3):
         if json_obj['shipments_exceptions'][i]['HAWB'] == hawb:
@@ -43,7 +43,7 @@ def get_exceptions(hawb):
 # 貨物情報取得
 @app.route('/v1/references/<string:hawb>', methods=['GET'])
 def get_shipments(hawb):
-    json_open = open('fwd_api_sample_shipments.json', 'r')
+    json_open = open('sample_data/fwd_api_sample_shipments.json', 'r')
     json_obj = json.load(json_open)
     for i in range(2):
         if json_obj['shipments'][i]['HAWB'] == hawb:
