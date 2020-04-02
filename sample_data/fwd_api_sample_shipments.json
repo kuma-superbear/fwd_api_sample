@@ -1,7 +1,7 @@
 {
     "shipments": [
         {
-			"HAWB": "NEU45156543",
+			"H-B/L": "NEU45156543",
 			"Invoice": "HOGEHOGE1234",
 			"Customer Reference": "HOGEHOGE1234",
 			"Purchase Order": "HOGEHOGE1234",
@@ -19,26 +19,26 @@
 			"Consignee": "INTEL IRELAND LTD",
 			"package": 4,
 			"weight": 176.9,
-			"mileston":[
+			"milestone":[
                 {
                     "date": "2020-02-16T19.30",
                     "reference": "UA0023/16",
-                    "descriotion": "ON BOARD(2ND.) +---> DUB 2020/02/16 06:25"
+                    "description": "ON BOARD(2ND.) +---> DUB 2020/02/16 06:25"
                 },
                 {
                     "date": "2020-02-15T23.31",
                     "reference": "UA1976/15",
-                    "descriotion": "ON BOARD(1ST.) +---> EWR 2020/02/16 05:54"
+                    "description": "ON BOARD(1ST.) +---> EWR 2020/02/16 05:54"
                 },
                 {
                     "date": "2020-02-15T23.30",
                     "reference": "UA1976/15",
-                    "descriotion": "FLIGHT SCHEDULE (1ST.) +---> EWR 2020/02/16 05:49"
+                    "description": "FLIGHT SCHEDULE (1ST.) +---> EWR 2020/02/16 05:49"
                 }
             ]
         },
         {
-			"HAWB": "TYOANA77992",
+			"H-B/L": "TYOANA77992",
 			"Invoice": "HOGEHOGE3456",
 			"Customer Reference": "HOGEHOGE3456",
 			"Purchase Order": "HOGEHOGE3456",
@@ -56,21 +56,21 @@
 			"Consignee": "INTEL CORPORATION",
 			"package": 6,
 			"weight": 13320,
-			"mileston":[
+			"milestone":[
                 {
                     "date": "2020-02-13T13.30",
                     "reference": "TRIU0551177",
-                    "descriotion": "LADEN ON BOARD at NAGOYA"
+                    "description": "LADEN ON BOARD at NAGOYA"
                 },
                 {
                     "date": "2020-02-13 13.30",
                     "reference": "TRIU0551177",
-                    "descriotion": "A.T.D. AT PORT OF LOADING at NAGOYA"
+                    "description": "A.T.D. AT PORT OF LOADING at NAGOYA"
                 },
                 {
                     "date": "2020-02-13 13.30 ",
                     "reference": "TCNU5187034",
-                    "descriotion": "A.T.D. AT PORT OF LOADING at NAGOYA"
+                    "description": "A.T.D. AT PORT OF LOADING at NAGOYA"
                 }
             ]
         }

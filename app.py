@@ -19,6 +19,10 @@ def get_number_of_shipments_etd(type):
     json_obj = json.load(json_open)
     if type == 'region':
         response = jsonify(json_obj['region_daily'])
+    elif type == '2020-02-29':
+        response = jsonify(json_obj['region_daily'])
+    elif type == '2020-02':
+        response = jsonify(json_obj['region_monthly'])
     else:
         response = 'nodata'
     return response
@@ -31,7 +35,7 @@ def get_exceptions(hawb):
     json_open = open('sample_data/fwd_api_sample_exception.json', 'r')
     json_obj = json.load(json_open)
     for i in range(3):
-        if json_obj['shipments_exceptions'][i]['HAWB'] == hawb:
+        if json_obj['shipments_exceptions'][i]['H-B/L'] == hawb:
             response = jsonify(json_obj['shipments_exceptions'][i])
             break
         else:
@@ -46,7 +50,7 @@ def get_shipments(hawb):
     json_open = open('sample_data/fwd_api_sample_shipments.json', 'r')
     json_obj = json.load(json_open)
     for i in range(2):
-        if json_obj['shipments'][i]['HAWB'] == hawb:
+        if json_obj['shipments'][i]['H-B/L'] == hawb:
             response = jsonify(json_obj['shipments'][i])
             break
         else:

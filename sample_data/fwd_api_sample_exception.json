@@ -1,21 +1,21 @@
 {
     "shipments_exceptions": [
         {
-            "HAWB": "NEC77931534",
+            "H-B/L": "NEC77931534",
             "origin": "NRT",
             "destination": "LAX",
             "date": "2020-02-24T13:43",
             "exception": "DMG"
         }, 
         {
-            "HAWB": "NCN23107372",
+            "H-B/L": "NCN23107372",
             "origin": "DLC",
             "destination": "SIN",
             "date": "2020-02-22T10:20",
             "exception": "DLY"
         },
         {
-            "HAWB": "NEU45152647",
+            "H-B/L": "NEU45152647",
             "origin": "PHX",
             "destination": "DUB",
             "date": "2020-02-19T14.15",

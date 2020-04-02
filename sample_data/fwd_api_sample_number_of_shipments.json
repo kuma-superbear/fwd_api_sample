@@ -21,7 +21,7 @@
             "date": "2020-02-29"
         }
     ], 
-    "region monthly": [
+    "region_monthly": [
         {
             "region": "JAPAN",
             "number_of_shipments": 390,
